@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skupaj za Izolo — Občino Izola Izolanom | Skupaj za Isola</title>
+  <meta name="description" content="Skupaj za Izolo (SZI) — lokalna politična stranka. Program, projekta Argo, kandidati za lokalne volitve 2026, kontakt. Občino Izola Izolanom." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+</head>
+<body>
+  <a class="skip" href="#program" data-sl="Preskoči na vsebino" data-it="Vai al contenuto">Preskoči na vsebino</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#domov" aria-label="Skupaj za Izolo — domov">
+        <!-- Uradni JPG lockup (golob + ime stranke). Prikaže se, ko obstaja assets/logo.jpg -->
+        <img class="brand-lockup" src="assets/logo.jpg" alt="Skupaj za Izolo" onload="this.classList.add('show');var f=this.nextElementSibling;if(f)f.style.display='none'" onerror="this.remove()" />
+        <!-- Rezerva: vektorski golob + HTML napis, če JPG (še) manjka -->
+        <span class="brand-fallback">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/logo-dove.svg" width="48" height="48" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <!-- Rezervni golob, če vektorski logotip manjka -->
+          <svg viewBox="0 0 64 64" width="40" height="40" role="img" style="display:none">
+            <circle cx="32" cy="32" r="30" fill="#fff"/>
+            <path d="M12 38 C18 20 30 12 44 14 C36 18 28 26 24 38 Z" fill="#0a4da1"/>
+            <path d="M20 30 C26 18 34 12 42 12 C38 16 34 20 32 26 Z" fill="#1b96d0"/>
+            <path d="M38 22 c4-3 9 0 7 4 l3 2 -3 1 c1 8-3 14-11 15 l-14 4 -2-3 3-1 -3-2 2-2 c6 1 12-1 15-6 l-2-6 c-1-3 1-6 5-6z" fill="none" stroke="#0a4da1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="43.5" cy="25.5" r="1.3" fill="#0a4da1"/>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>SKUPAJ</strong><span>ZA IZOLO</span></span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Glavna navigacija">
+        <a href="#program" data-sl="Program" data-it="Programma">Program</a>
+        <a href="#argo" data-sl="Argo" data-it="Argo">Argo</a>
+        <a href="#kandidati" data-sl="Kandidati" data-it="Candidati">Kandidati</a>
+        <a href="#podpora" data-sl="Podpora" data-it="Sostegno">Podpora</a>
+        <a href="#kontakt" data-sl="Kontakt" data-it="Contatto">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Jezik / Lingua">
+          <button id="btn-sl" class="lang-btn active" type="button">SL</button>
+          <button id="btn-it" class="lang-btn" type="button">IT</button>
+        </div>
+        <a class="btn btn-primary" href="#podpora" data-sl="Podpri nas" data-it="Sostienici">Podpri nas</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Meni" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobilna navigacija">
+      <a href="#program" data-sl="Program" data-it="Programma">Program</a>
+      <a href="#argo" data-sl="Argo" data-it="Argo">Argo</a>
+      <a href="#kandidati" data-sl="Kandidati" data-it="Candidati">Kandidati</a>
+      <a href="#podpora" data-sl="Podpora" data-it="Sostegno">Podpora</a>
+      <a href="#kontakt" data-sl="Kontakt" data-it="Contatto">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="domov">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-sl="Lokalne volitve 2026 • Izola" data-it="Elezioni locali 2026 • Isola">Lokalne volitve 2026 • Izola</p>
+          <h1 data-sl="Občino Izola Izolanom." data-it="Il Comune di Isola agli Isolani.">Občino Izola Izolanom.</h1>
+          <p class="lead" data-sl="Skupaj za Izolo (SZI) smo nova lokalna stranka. Zavzemamo se za dostopna stanovanja, urejen promet, ohranjeno Argo kot dnevno sobo Izole ter dostojno življenje za mlade in starejše." data-it="Insieme per Isola (SZI) è un nuovo partito locale. Ci battiamo per alloggi accessibili, mobilità ordinata, l'ex Argo come salotto di Isola e una vita dignitosa per giovani e anziani.">Skupaj za Izolo (SZI) smo nova lokalna stranka. Zavzemamo se za dostopna stanovanja, urejen promet, ohranjeno Argo kot dnevno sobo Izole ter dostojno življenje za mlade in starejše.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#program" data-sl="Spoznajte program" data-it="Scopri il programma">Spoznajte program</a>
+            <a class="btn btn-ghost" href="#kandidati" data-sl="Seznam kandidatov" data-it="Lista candidati">Seznam kandidatov</a>
+          </div>
+          <ul class="hero-points">
+            <li>🕊️ <span data-sl="Povezovanje, ne delitev" data-it="Unire, non dividere">Povezovanje, ne delitev</span></li>
+            <li>🏠 <span data-sl="Izolska stanovanja Izolanom" data-it="Case isolane agli isolani">Izolska stanovanja Izolanom</span></li>
+            <li>🏭 <span data-sl="Argo: kultura, mladi, muzej" data-it="Argo: cultura, giovani, museo">Argo: kultura, mladi, muzej</span></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <!-- Zamenjajte src z vašim renderjem: assets/render-argo-park.jpg -->
+          <figure class="hero-figure">
+            <img src="assets/render-argo-park.jpg" alt="Vizualizacija parka Argo z marino — Skupaj za Izolo" onerror="this.style.display='none'" />
+            <div class="hero-fallback" aria-hidden="true">
+              <span>ARGO — DNEVNA SOBA IZOLE</span>
+              <small>assets/render-argo-park.jpg</small>
+            </div>
+            <figcaption data-sl="Vizija: Argo — dnevna soba Izole (park, kultura, marina)" data-it="Visione: Argo — il salotto di Isola (parco, cultura, marina)">Vizija: Argo — dnevna soba Izole (park, kultura, marina)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="infobar">
+      <div class="container infobar-inner">
+        <span data-sl="Redne lokalne volitve: nedelja, 15. 11. 2026" data-it="Elezioni locali ordinarie: domenica 15. 11. 2026">Redne lokalne volitve: nedelja, 15. 11. 2026</span>
+        <span aria-hidden="true">•</span>
+        <span data-sl="Nova stranka v ustanavljanju — potrebujemo vaš podpis podpore" data-it="Nuovo partito in costituzione — serve la tua firma">Nova stranka v ustanavljanju — potrebujemo vaš podpis podpore</span>
+        <a href="#podpora" data-sl="Kako podpreti →" data-it="Come sostenere →">Kako podpreti →</a>
+      </div>
+    </div>
+
+    <!-- PROGRAM -->
+    <section id="program" class="section">
+      <div class="container">
+        <p class="eyebrow" data-sl="Naš program" data-it="Il nostro programma">Naš program</p>
+        <h2 data-sl="6 stebrov za boljšo Izolo" data-it="6 pilastri per un'Isola migliore">6 stebrov za boljšo Izolo</h2>
+        <p class="section-lead" data-sl="Povzeto po programskem letaku SZI. Celoten program bomo objavili po ustanovnem kongresu." data-it="Sintesi dal volantino programmatico SZI. Il programma completo sarà pubblicato dopo il congresso fondativo.">Povzeto po programskem letaku SZI. Celoten program bomo objavili po ustanovnem kongresu.</p>
+
+        <div class="cards">
+          <article class="card accent-pink">
+            <div class="card-media media-pink" aria-hidden="true"><span class="card-icon">🏭</span><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Argo: dnevna soba Izole" data-it="Argo: il salotto di Isola">Argo: dnevna soba Izole</h3>
+            <p data-sl="Industrijska kulturna dediščina! Postopno umeščanje javnih kulturnih programov na območje nekdanje tovarne Argo: Mladinski kulturni center, muzej, galerija, prireditveni zunanji in notranji prostori. Stičišče za vse občane in obiskovalce." data-it="Patrimonio culturale industriale! Inserimento graduale di programmi culturali pubblici nell'area dell'ex fabbrica Argo: Centro culturale giovanile, museo, galleria, spazi per eventi interni ed esterni. Punto d'incontro per cittadini e visitatori.">Industrijska kulturna dediščina! Postopno umeščanje javnih kulturnih programov na območje nekdanje tovarne Argo: Mladinski kulturni center, muzej, galerija, prireditveni zunanji in notranji prostori. Stičišče za vse občane in obiskovalce.</p>
+          </article>
+          <article class="card accent-blue">
+            <div class="card-media media-blue" aria-hidden="true"><span class="card-icon">🏠</span><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Javna stanovanja za Izolane" data-it="Alloggi pubblici per gli Isolani">Javna stanovanja za Izolane</h3>
+            <p data-sl="Izolska stanovanja Izolanom — dostopna javna najemna stanovanja z možnostjo odkupa, za varno prihodnost!" data-it="Case isolane agli isolani — alloggi pubblici in affitto accessibili con possibilità di riscatto, per un futuro sicuro!">Izolska stanovanja Izolanom — dostopna javna najemna stanovanja z možnostjo odkupa, za varno prihodnost!</p>
+          </article>
+          <article class="card accent-pink">
+            <div class="card-media media-pink" aria-hidden="true"><span class="card-icon">🚌</span><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Promet, parkirišča in javni prevozi" data-it="Traffico, parcheggi e trasporto pubblico">Promet, parkirišča in javni prevozi</h3>
+            <p data-sl="Garažna hiša, izgradnja manjših garaž, mestni avtobus, avtobusna postaja." data-it="Parcheggio multipiano, piccoli garage di quartiere, autobus urbano, stazione degli autobus.">Garažna hiša, izgradnja manjših garaž, mestni avtobus, avtobusna postaja.</p>
+          </article>
+          <article class="card accent-blue">
+            <div class="card-media media-blue" aria-hidden="true"><span class="card-icon">🌾</span><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Prostorski razvoj in kmetijstvo" data-it="Sviluppo territoriale e agricoltura">Prostorski razvoj in kmetijstvo</h3>
+            <p data-sl="Transparenten prostor za ljudi, ne za interese posameznikov. Varujemo kmetijska zemljišča. Športno in aktivno življenje v Izoli." data-it="Territorio trasparente per le persone, non per interessi singoli. Tuteliamo i terreni agricoli. Vita sportiva e attiva a Isola.">Transparenten prostor za ljudi, ne za interese posameznikov. Varujemo kmetijska zemljišča. Športno in aktivno življenje v Izoli.</p>
+          </article>
+          <article class="card accent-pink">
+            <div class="card-media media-pink" aria-hidden="true"><span class="card-icon">❤️</span><img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Skrb za starejše" data-it="Cura degli anziani">Skrb za starejše</h3>
+            <p data-sl="Dostojna starost v domačem okolju. Nov dom upokojencev in mreža oskrbovanih stanovanj." data-it="Una vecchiaia dignitosa nel proprio ambiente. Nuova casa di riposo e rete di alloggi assistiti.">Dostojna starost v domačem okolju. Nov dom upokojencev in mreža oskrbovanih stanovanj.</p>
+          </article>
+          <article class="card accent-blue">
+            <div class="card-media media-blue" aria-hidden="true"><span class="card-icon">💡</span><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /></div>
+            <h3 data-sl="Mlada in inovativna podjetja" data-it="Giovani e imprese innovative">Mlada in inovativna podjetja</h3>
+            <p data-sl="Vzpostavitev podjetniških inkubatorjev s subvencioniranimi najemninami za start-up podjetja in lokalne obrtnike." data-it="Incubatori d'impresa con affitti agevolati per start-up e artigiani locali.">Vzpostavitev podjetniških inkubatorjev s subvencioniranimi najemninami za start-up podjetja in lokalne obrtnike.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARGO PROJEKT -->
+    <section id="argo" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow" data-sl="Ključni projekt mandata" data-it="Progetto chiave del mandato">Ključni projekt mandata</p>
+        <h2 data-sl="Argo — od degradiranega območja do stičišča mesta" data-it="Argo — da area degradata a cuore della città">Argo — od degradiranega območja do stičišča mesta</h2>
+        <div class="argo-grid">
+          <figure class="argo-figure">
+            <img src="assets/render-argo-park.jpg" alt="Argo park — pogled z višine" loading="lazy" onerror="this.style.display='none'" />
+            <div class="img-fallback"><span data-sl="Park Argo + marina" data-it="Parco Argo + marina">Park Argo + marina</span></div>
+            <figcaption data-sl="Zeleni park, amfiteater, multifunkcijska dvorana in prenovljena tovarna Argo." data-it="Parco verde, anfiteatro, sala multifunzionale e fabbrica Argo riqualificata.">Zeleni park, amfiteater, multifunkcijska dvorana in prenovljena tovarna Argo.</figcaption>
+          </figure>
+          <figure class="argo-figure">
+            <img src="assets/render-argo-dvorana.jpg" alt="Notranjost Arga — mladinski center" loading="lazy" onerror="this.style.display='none'" />
+            <div class="img-fallback"><span data-sl="Notranje dvorišče Arga" data-it="Corte interna dell'Argo">Notranje dvorišče Arga</span></div>
+            <figcaption data-sl="Pokrito dvorišče: bar, oder, druženje mladih — celoletni program." data-it="Corte coperta: bar, palco, ritrovo giovani — programma annuale.">Pokrito dvorišče: bar, oder, druženje mladih — celoletni program.</figcaption>
+          </figure>
+        </div>
+        <ul class="checklist">
+          <li data-sl="Mladinski kulturni center + glasbeni program" data-it="Centro culturale giovanile + musica">Mladinski kulturni center + glasbeni program</li>
+          <li data-sl="Muzej ribištva in galerija" data-it="Museo della pesca e galleria">Muzej ribištva in galerija</li>
+          <li data-sl="Zunanji amfiteater in tržnica idej" data-it="Anfiteatro esterno e mercato delle idee">Zunanji amfiteater in tržnica idej</li>
+          <li data-sl="Postopnost: najprej programi, nato gradnja" data-it=" gradualità: prima i programmi, poi l'edilizia">Postopnost: najprej programi, nato gradnja</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KANDIDATI -->
+    <section id="kandidati" class="section">
+      <div class="container">
+        <p class="eyebrow" data-sl="Lokalne volitve 2026" data-it="Elezioni locali 2026">Lokalne volitve 2026</p>
+        <h2 data-sl="Naši kandidati" data-it="I nostri candidati">Naši kandidati</h2>
+        <p class="section-lead" data-sl="Seznam dopolnjujemo. Spodaj so okvirna mesta — fotografije in življenjepisi sledijo po potrditvi list." data-it="Lista in aggiornamento. Sotto i segnaposto — foto e biografie dopo la conferma delle liste.">Seznam dopolnjujemo. Spodaj so okvirna mesta — fotografije in življenjepisi sledijo po potrditvi list.</p>
+
+        <div class="mayor-card">
+          <div class="avatar avatar-lg" aria-hidden="true">Ž</div>
+          <div>
+            <p class="eyebrow" data-sl="Kandidat za župana" data-it="Candidato sindaco">Kandidat za župana</p>
+            <h3><span data-sl="Ime Priimek — bo objavljeno" data-it="Nome Cognome — da pubblicare">Ime Priimek — bo objavljeno</span></h3>
+            <p data-sl="Kratek opis: Izolan/ka, izkušnje, vizija. Zamenjajte s pravim besedilom." data-it="Breve profilo: isolano/a, esperienza, visione. Sostituire con il testo reale.">Kratek opis: Izolan/ka, izkušnje, vizija. Zamenjajte s pravim besedilom.</p>
+          </div>
+        </div>
+
+        <div class="candidate-grid">
+          <!-- Podvojite .candidate za vsakega kandidata. Slike: assets/kandidat-01.jpg ... -->
+          <article class="candidate"><div class="avatar">1</div><h4>Ime Priimek</h4><p data-sl="Kandidat za občinski svet" data-it="Candidato al consiglio comunale">Kandidat za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">2</div><h4>Ime Priimek</h4><p data-sl="Kandidatka za občinski svet" data-it="Candidata al consiglio comunale">Kandidatka za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">3</div><h4>Ime Priimek</h4><p data-sl="Kandidat za občinski svet" data-it="Candidato al consiglio comunale">Kandidat za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">4</div><h4>Ime Priimek</h4><p data-sl="Kandidatka za občinski svet" data-it="Candidata al consiglio comunale">Kandidatka za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">5</div><h4>Ime Priimek</h4><p data-sl="Kandidat za občinski svet" data-it="Candidato al consiglio comunale">Kandidat za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">6</div><h4>Ime Priimek</h4><p data-sl="Kandidatka za občinski svet" data-it="Candidata al consiglio comunale">Kandidatka za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">7</div><h4>Ime Priimek</h4><p data-sl="Kandidat za občinski svet" data-it="Candidato al consiglio comunale">Kandidat za občinski svet</p></article>
+          <article class="candidate"><div class="avatar">8</div><h4>Ime Priimek</h4><p data-sl="Kandidatka za občinski svet" data-it="Candidata al consiglio comunale">Kandidatka za občinski svet</p></article>
+        </div>
+        <p class="hint" data-sl="Navodilo uredniku: zamenjajte »Ime Priimek« in dodajte <img src='assets/kandidat-XX.jpg'> ter kratek opis." data-it="Istruzioni: sostituire «Ime Priimek» e aggiungere <img src='assets/kandidat-XX.jpg'> e breve bio.">Navodilo uredniku: zamenjajte »Ime Priimek« in dodajte sliko ter kratek opis.</p>
+      </div>
+    </section>
+
+    <!-- PODPORA -->
+    <section id="podpora" class="section section-alt">
+      <div class="container support-grid">
+        <div>
+          <p class="eyebrow" data-sl="Vabljeni k podpori" data-it="Invito al sostegno">Vabljeni k podpori</p>
+          <h2 data-sl="Za registracijo stranke potrebujemo vaš podpis" data-it="Per registrare il partito serve la tua firma">Za registracijo stranke potrebujemo vaš podpis</h2>
+          <p data-sl="Za podporo novi stranki »Skupaj za Izolo« je potrebno overiti podpis pristopne izjave na katerikoli Upravni enoti v Sloveniji. Obrazec dobite pri nas ali na sedežu stranke." data-it="Per sostenere il nuovo partito «Insieme per Isola» è necessario autenticare la firma della dichiarazione di adesione presso qualsiasi Unità amministrativa in Slovenia. Il modulo è disponibile presso di noi.">Za podporo novi stranki »Skupaj za Izolo« je potrebno overiti podpis pristopne izjave na katerikoli Upravni enoti v Sloveniji. Obrazec dobite pri nas ali na sedežu stranke.</p>
+          <ol class="steps">
+            <li data-sl="Pišite nam na e-pošto in prejmite pristopno izjavo." data-it="Scriveteci via e-mail per ricevere il modulo.">Pišite nam na e-pošto in prejmite pristopno izjavo.</li>
+            <li data-sl="Podpis overite na Upravni enoti (s seboj osebni dokument)." data-it="Autenticate la firma all'Unità amministrativa (con documento).">Podpis overite na Upravni enoti (s seboj osebni dokument).</li>
+            <li data-sl="Izjavo vrnite nam — poskrbimo za ostalo." data-it="Restituiteci la dichiarazione — pensiamo a tutto noi.">Izjavo vrnite nam — poskrbimo za ostalo.</li>
+          </ol>
+          <a class="btn btn-primary" href="#kontakt" data-sl="Želim podpreti" data-it="Voglio sostenere">Želim podpreti</a>
+        </div>
+        <aside class="support-card">
+          <h3 data-sl="Kontakt za obrazce" data-it="Contatto per i moduli">Kontakt za obrazce</h3>
+          <p>✉️ <a href="mailto:info@skupajzaizolo.si">info@skupajzaizolo.si</a><br />📞 <a href="tel:+38600000000">+386 XX XXX XXX</a></p>
+          <p class="small" data-sl="Nadomestilo za overitev podpisa krije stranka / po dogovoru." data-it="Il costo dell'autentica è a carico del partito / previo accordo.">Nadomestilo za overitev podpisa krije stranka / po dogovoru.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow" data-sl="Kontakt" data-it="Contatto">Kontakt</p>
+          <h2 data-sl="Pišite nam" data-it="Scriveteci">Pišite nam</h2>
+          <address>
+            <strong>Skupaj za Izolo / Insieme per Isola (SZI)</strong><br />
+            <span data-sl="Izola, Slovenija (točen naslov sledi)" data-it="Isola, Slovenia (indirizzo esatto a seguire)">Izola, Slovenija (točen naslov sledi)</span><br />
+            ✉️ <a href="mailto:info@skupajzaizolo.si">info@skupajzaizolo.si</a><br />
+            📞 <a href="tel:+38600000000">+386 XX XXX XXX</a>
+          </address>
+          <p>
+            <a href="https://www.izola.si" target="_blank" rel="noopener">Občina Izola</a> ·
+            <a href="https://maps.google.com/?q=Izola,Slovenia" target="_blank" rel="noopener" data-sl="Zemljevid" data-it="Mappa">Zemljevid</a>
+          </p>
+          <p class="small">Facebook / Instagram / TikTok:
+            <span data-sl="povezave dodajte naknadno" data-it="link da aggiungere">povezave dodajte naknadno</span>
+          </p>
+        </div>
+        <form class="contact-form" action="mailto:info@skupajzaizolo.si" method="post" enctype="text/plain">
+          <label><span data-sl="Ime in priimek" data-it="Nome e cognome">Ime in priimek</span><input name="ime" required autocomplete="name" /></label>
+          <label><span data-sl="E-pošta" data-it="E-mail">E-pošta</span><input name="email" type="email" required autocomplete="email" /></label>
+          <label><span data-sl="Sporočilo" data-it="Messaggio">Sporočilo</span><textarea name="sporocilo" rows="4" required></textarea></label>
+          <label class="consent"><input type="checkbox" required /> <span class="small" data-sl="Soglašam, da se moji podatki uporabijo za odgovor (GDPR)." data-it="Acconsento all'uso dei miei dati per la risposta (GDPR).">Soglašam, da se moji podatki uporabijo za odgovor (GDPR).</span></label>
+          <button class="btn btn-primary" type="submit" data-sl="Pošlji" data-it="Invia">Pošlji</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>SKUPAJ ZA IZOLO</strong> · <span data-sl="Lokalna politična stranka v ustanavljanju" data-it="Partito locale in costituzione">Lokalna politična stranka v ustanavljanju</span> · © 2026</p>
+      <p class="small" data-sl="Slogan: Občino Izola Izolanom. Logotip: golob, temno modra C100 M70 Y0 K0, svetlo modra C80 M30 Y0 K0." data-it="Slogan: Il Comune di Isola agli Isolani. Logo: colomba, blu scuro C100 M70 Y0 K0, azzurro C80 M30 Y0 K0.">Slogan: Občino Izola Izolanom. Logotip: golob, temno modra C100 M70 Y0 K0, svetlo modra C80 M30 Y0 K0.</p>
+      <p class="small"><a href="#" data-sl="Varstvo osebnih podatkov" data-it="Privacy">Varstvo osebnih podatkov</a> · <a href="#" data-sl="Preglednost političnega oglaševanja" data-it="Trasparenza pubblicità politica">Preglednost političnega oglaševanja</a> · <span data-sl="Fotografije: Unsplash (prosto za uporabo)" data-it="Foto: Unsplash (libero utilizzo)">Fotografije: Unsplash (prosto za uporabo)</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
