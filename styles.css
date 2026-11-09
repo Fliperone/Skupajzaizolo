@@ -55,8 +55,7 @@ h2{font-size:clamp(24px,3.4vw,34px);color:var(--dark);margin:0 0 10px}
 
 .team-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center}
 .team-figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,var(--dark),var(--light))}
-.team-figure img{width:100%;height:100%;display:block;object-fit:cover;aspect-ratio:16/9}
-.team-figure figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(8,30,55,.72);color:#fff;padding:10px 14px;font-size:14px}
+.team-figure img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 40%;aspect-ratio:16/9;background:var(--bg)}
 .team-copy .btn{margin-top:6px}
 
 .infobar{background:var(--dark);color:#fff}
