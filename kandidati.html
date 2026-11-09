@@ -5,35 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kandidati za Občinski svet — Skupaj za Izolo | Insieme per Isola</title>
   <meta name="description" content="Kandidati in kandidatke liste Skupaj za Izolo (SZI) za Občinski svet Občine Izola — lokalne volitve 2026." />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
   <style>
     :root{
-      --dark:#0a4da1;
-      --light:#1b96d0;
-      --accent:#e5007d;
-      --bg:#ffffff;
       --bg-alt:#f2f7fb;
-      --ink:#10233b;
-      --muted:#5b6f86;
-      --shadow:0 8px 28px rgba(10,77,161,.12);
     }
-    *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-    .container{max-width:980px;margin:0 auto;padding:0 20px}
-
-    /* znamenjska vrstica */
-    .brandbar{background:#fff;border-bottom:1px solid #e3ecf4;position:sticky;top:0;z-index:50}
-    .brandbar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
-    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--dark)}
-    .brand img{height:40px;width:40px;object-fit:cover;border-radius:50%}
-    .brand .bname{display:flex;flex-direction:column;line-height:1;font-size:16px;letter-spacing:.5px}
-    .brand .bname strong{font-weight:800}.brand .bname span{font-weight:400}
-    .brandbar a.back{text-decoration:none;font-weight:700;color:var(--dark)}
-    .brandbar a.back:hover{color:var(--light)}
+    body{line-height:1.65}
+    .page-body{max-width:980px;margin:0 auto;padding:0 20px}
 
     header.top{background:var(--dark);color:#fff;padding:44px 0}
-    .eyebrow{font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.85;margin:0 0 6px}
+    header.top .eyebrow{font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.85;color:#fff;margin:0 0 6px}
     h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
     .lead{margin:0;max-width:680px;opacity:.92}
 
@@ -67,15 +50,48 @@
   </style>
 </head>
 <body>
-  <div class="brandbar">
-    <div class="container brandbar-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.jpg" alt="" onerror="this.style.display='none'" />
-        <span class="bname"><strong>SKUPAJ</strong><span>ZA IZOLO</span></span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Skupaj za Izolo — domov">
+        <!-- Uradni JPG lockup (golob + ime stranke). Prikaže se, ko obstaja assets/logo.jpg -->
+        <img class="brand-lockup" src="assets/logo.jpg" alt="Skupaj za Izolo" onload="this.classList.add('show');var f=this.nextElementSibling;if(f)f.style.display='none'" onerror="this.remove()" />
+        <!-- Rezerva: vektorski golob + HTML napis, če JPG (še) manjka -->
+        <span class="brand-fallback">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/logo-dove.svg" width="48" height="48" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <!-- Rezervni golob, če vektorski logotip manjka -->
+          <svg viewBox="0 0 64 64" width="40" height="40" role="img" style="display:none">
+            <circle cx="32" cy="32" r="30" fill="#fff"/>
+            <path d="M12 38 C18 20 30 12 44 14 C36 18 28 26 24 38 Z" fill="#0a4da1"/>
+            <path d="M20 30 C26 18 34 12 42 12 C38 16 34 20 32 26 Z" fill="#1b96d0"/>
+            <path d="M38 22 c4-3 9 0 7 4 l3 2 -3 1 c1 8-3 14-11 15 l-14 4 -2-3 3-1 -3-2 2-2 c6 1 12-1 15-6 l-2-6 c-1-3 1-6 5-6z" fill="none" stroke="#0a4da1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="43.5" cy="25.5" r="1.3" fill="#0a4da1"/>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>SKUPAJ</strong><span>ZA IZOLO</span></span>
+        </span>
       </a>
-      <a class="back" href="index.html">← Glavna stran</a>
+      <nav class="main-nav" aria-label="Glavna navigacija">
+        <a href="index.html#program" data-sl="Program" data-it="Programma">Program</a>
+        <a href="index.html#argo" data-sl="Argo" data-it="Argo">Argo</a>
+        <a href="index.html#kandidati" data-sl="Kandidati" data-it="Candidati">Kandidati</a>
+        <a href="index.html#kontakt" data-sl="Kontakt" data-it="Contatto">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Jezik / Lingua">
+          <button id="btn-sl" class="lang-btn active" type="button">SL</button>
+          <button id="btn-it" class="lang-btn" type="button">IT</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Meni" aria-expanded="false">☰</button>
+      </div>
     </div>
-  </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobilna navigacija">
+      <a href="index.html#program" data-sl="Program" data-it="Programma">Program</a>
+      <a href="index.html#argo" data-sl="Argo" data-it="Argo">Argo</a>
+      <a href="index.html#kandidati" data-sl="Kandidati" data-it="Candidati">Kandidati</a>
+      <a href="index.html#kontakt" data-sl="Kontakt" data-it="Contatto">Kontakt</a>
+    </nav>
+  </header>
 
   <header class="top">
     <div class="container">
@@ -85,7 +101,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="page-body">
     <article class="cand" id="k01">
       <div class="photo">
         <img src="assets/SZI-profilne/daniel.png" alt="Daniel Škerjanc" loading="lazy" />
@@ -210,5 +226,7 @@
   <footer>
     <div class="container"><strong>SKUPAJ ZA IZOLO</strong> · Lokalne volitve 2026 · <a href="index.html">Glavna stran</a></div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
