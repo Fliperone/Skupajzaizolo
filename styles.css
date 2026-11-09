@@ -63,7 +63,7 @@ h2{font-size:clamp(24px,3.4vw,34px);color:var(--dark);margin:0 0 10px}
 .infobar-inner{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 20px;font-size:15px}
 .infobar a{color:#fff;font-weight:700}
 .num13{display:inline-flex;flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:17px;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.chip13{display:inline-block;vertical-align:middle;background:var(--accent);color:#fff;font-size:.6em;letter-spacing:1px;padding:6px 14px;border-radius:999px;margin-left:10px}
+.chip13{display:inline-block;vertical-align:middle;background:var(--light);color:#fff;font-size:.6em;letter-spacing:1px;padding:6px 14px;border-radius:999px;margin-left:10px}
 
 .section{padding:56px 0}
 .section-alt{background:#fff;border-top:1px solid #e6eef6;border-bottom:1px solid #e6eef6}
