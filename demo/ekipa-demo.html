@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predlogi postavitve — skupinska fotografija | SZI</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body{background:#fff}
+    .demo-head{background:#0b2c52;color:#fff;padding:22px 0}
+    .demo-head h1{margin:0 0 4px;font-size:22px;color:#fff}
+    .demo-head p{margin:0;color:#c7dcf0;font-size:14px}
+    .demo-label{display:inline-block;background:var(--accent);color:#fff;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:12px;padding:5px 12px;border-radius:999px;margin-bottom:10px}
+    .demo-section{border-bottom:1px dashed #cfddea;padding:38px 0 46px}
+    .demo-note{color:var(--muted);font-size:14px;max-width:760px}
+
+    /* ---------- PREDLOG A: široka foto pod naslovom ---------- */
+    .a-photo{width:100%;display:block;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/9;object-fit:cover;object-position:center 40%}
+    .a-cta{text-align:center;margin-top:18px}
+
+    /* ---------- PREDLOG B: full-bleed banner s prelivom ---------- */
+    .b-banner{position:relative;overflow:hidden}
+    .b-banner img{width:100%;height:560px;object-fit:cover;object-position:center 42%;display:block}
+    .b-banner .b-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,30,55,0) 22%,rgba(8,30,55,.55) 55%,rgba(8,30,55,.94) 100%);display:flex;align-items:flex-end}
+    .b-banner .b-copy{padding:0 0 38px;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.35)}
+    .b-banner .eyebrow{color:#ffb1d2;font-size:13px;letter-spacing:2px;font-weight:800;text-transform:uppercase;margin:0 0 6px}
+    .b-banner h2{margin:0 0 8px;font-size:clamp(26px,3.4vw,40px);color:#fff}
+    .b-banner p{margin:0 0 14px;max-width:640px;color:rgba(255,255,255,.9)}
+    .b-banner .btn-primary{background:#fff;color:var(--dark)}
+    .b-banner .btn-primary:hover{background:#e8f3fa;color:var(--dark)}
+
+    /* ---------- PREDLOG C: velika foto + tekst kartica ---------- */
+    .c-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:26px;align-items:stretch}
+    .c-grid img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:center 40%;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .c-card{background:var(--bg);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;justify-content:center;gap:12px;border:1px solid #e0ecf6}
+    .c-card h2{margin:0}
+    .c-card p{margin:0;color:var(--muted)}
+    .c-card .btn{align-self:flex-start;margin-top:6px}
+
+    @media(max-width:900px){
+      .c-grid{grid-template-columns:1fr}
+      .c-grid img{min-height:0;aspect-ratio:16/9;height:auto}
+      .b-banner img{height:440px}
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-head">
+    <div class="container">
+      <h1>Predlogi postavitve — skupinska fotografija</h1>
+      <p>Tri možnosti za večjo fotografijo ekipe v razdelku »Kandidati za Občinski svet«. Spodaj izberi črko.</p>
+    </div>
+  </div>
+
+  <!-- A -->
+  <section class="demo-section">
+    <div class="container">
+      <span class="demo-label">Predlog A</span>
+      <h2 style="margin:0 0 4px">Široka fotografija pod naslovom</h2>
+      <p class="demo-note">Besedilo ostane levo zgoraj, fotografija zavzame celotno širino vsebine in je približno dvakrat večja kot zdaj. Klasično, varno, zelo berljivo.</p>
+      <div style="height:16px"></div>
+      <p class="eyebrow" style="margin:0 0 4px">Kandidati za Občinski svet</p>
+      <h2 style="margin:0 0 8px">Naša ekipa</h2>
+      <p style="margin:0 0 20px;color:var(--muted);max-width:760px">Predstavljamo kandidate in kandidatke volilne številke 13 — Skupaj za Izolo (SZI) za Občinski svet Občine Izola.</p>
+      <img class="a-photo" src="../assets/ekipa.jpg" alt="Kandidati SZI — skupinska fotografija" />
+      <div class="a-cta">
+        <a class="btn btn-primary" href="#">Kandidati za Občinski svet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="demo-section" style="padding-left:0;padding-right:0">
+    <div class="container">
+      <span class="demo-label">Predlog B</span>
+      <h2 style="margin:0 0 4px">Fotografija čez celo stran (banner)</h2>
+      <p class="demo-note">Fotografija sega od roba do roba, naslov in gumb sta na spodnjem prelivu. Najbolj udarno, fotografija je glavni junak.</p>
+    </div>
+    <div style="height:16px"></div>
+    <div class="b-banner">
+      <img src="../assets/ekipa.jpg" alt="Kandidati SZI — skupinska fotografija" />
+      <div class="b-overlay">
+        <div class="container b-copy">
+          <p class="eyebrow">Kandidati za Občinski svet · volilna številka 13</p>
+          <h2>Naša ekipa</h2>
+          <p>Deset Izolanov in Izolank, ki stojijo za listo 13 — Skupaj za Izolo (SZI).</p>
+          <a class="btn btn-primary" href="#">Kandidati za Občinski svet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="demo-section">
+    <div class="container">
+      <span class="demo-label">Predlog C</span>
+      <h2 style="margin:0 0 4px">Velika fotografija + stranska kartica</h2>
+      <p class="demo-note">Fotografija zasede ~60 % širine in celo višino razdelka, besedilo se preseli v svetlo kartico desno. Urejeno, kot uvodnik.</p>
+      <div style="height:16px"></div>
+      <div class="c-grid">
+        <img src="../assets/ekipa.jpg" alt="Kandidati SZI — skupinska fotografija" />
+        <div class="c-card">
+          <p class="eyebrow" style="margin:0">Kandidati za Občinski svet</p>
+          <h2>Naša ekipa</h2>
+          <p>Predstavljamo kandidate in kandidatke volilne številke 13 — Skupaj za Izolo (SZI) za Občinski svet Občine Izola.</p>
+          <a class="btn btn-primary" href="#">Kandidati za Občinski svet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0b2c52;color:#d7e6f7;text-align:center;padding:18px;font-size:13px">
+    DEMO — SZI · skupinska fotografija · izberi A, B ali C
+  </footer>
+</body>
+</html>
