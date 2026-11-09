@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kandidati — Prototip B (uredniški seznam) | Skupaj za Izolo</title>
+  <style>
+    :root{
+      --dark:#0a4da1;
+      --light:#1b96d0;
+      --accent:#e5007d;
+      --bg:#ffffff;
+      --bg-alt:#f2f7fb;
+      --ink:#10233b;
+      --muted:#5b6f86;
+      --shadow:0 8px 28px rgba(10,77,161,.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+    .container{max-width:980px;margin:0 auto;padding:0 20px}
+    header.top{background:var(--dark);color:#fff;padding:44px 0}
+    .eyebrow{font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.85;margin:0 0 6px}
+    h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px)}
+    .lead{margin:0;max-width:680px;opacity:.92}
+    .cand{display:grid;grid-template-columns:300px 1fr;gap:30px;align-items:center;padding:42px 0;border-bottom:1px solid #e6eef6;scroll-margin-top:70px}
+    .cand.alt{grid-template-columns:1fr 300px}
+    .cand.alt .photo{order:2}
+    .cand .photo{margin:0;position:relative}
+    .cand .photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;box-shadow:var(--shadow);display:block}
+    .cand .photo .big-num{position:absolute;top:-18px;left:-18px;background:var(--accent);color:#fff;font-weight:800;font-size:20px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+    .cand .txt{display:flex;flex-direction:column;gap:10px}
+    .cand h2{margin:0;font-size:clamp(22px,2.6vw,30px);color:var(--dark)}
+    .cand .role{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+    .cand p{margin:0;color:var(--muted);font-size:16px}
+    .more{background:var(--bg-alt);border-radius:16px;padding:22px 26px;margin:8px 0 48px}
+    .more h2{margin:0 0 8px;font-size:18px;color:var(--dark)}
+    .more p{margin:6px 0;color:var(--muted);font-size:14px}
+    footer{background:#0b2c52;color:#d7e6f7;text-align:center;padding:18px;font-size:13px}
+    footer a{color:#fff}
+    @media(max-width:820px){
+      .cand,.cand.alt{grid-template-columns:1fr}
+      .cand.alt .photo{order:0}
+      .cand .photo{max-width:320px;margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="container">
+      <p class="eyebrow">Lokalne volitve 2026 • Izola</p>
+      <h1>Naši kandidati</h1>
+      <p class="lead">Ljudje, ki stojijo za listo Skupaj za Izolo (SZI). Vsak s svojimi izkušnjami in zaupanjem do Izole.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="cand" id="k01">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/daniel.png" alt="Daniel Škerjanc" loading="lazy" />
+        <span class="big-num">01</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidat za občinski svet</span>
+        <h2>Daniel Škerjanc</h2>
+        <p>Star 32 let, deluje na področju fotografije in videoprodukcije. Ima bogate izkušnje z organizacijo dogodkov za mlade, dobro pa pozna tudi problematiko degradiranih območij v Izoli in možnosti njihove začasne uporabe, med drugim na območju nekdanje tovarne Argo.</p>
+      </div>
+    </article>
+    <article class="cand alt" id="k02">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/viktorija.jpg" alt="Viktorija Carli" loading="lazy" />
+        <span class="big-num">02</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidatka za občinski svet</span>
+        <h2>Viktorija Carli</h2>
+        <p>Stara 65 let, po izobrazbi agronomka, pred kratkim upokojenka. V dolgoletni karieri je delovala na področju urejanja kmetijskih zemljišč, parcelacije in prostorskega načrtovanja. Rodila se je v Izoli, zato mesto dobro pozna in je z njim tesno povezana. Zavzema se za razvoj Izole, ki temelji na iskreni predanosti lokalnemu okolju, brez ideoloških delitev, ter za občino, v kateri se bodo ljudje počutili domače in sprejete.</p>
+      </div>
+    </article>
+    <article class="cand" id="k03">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/ren.jpg" alt="Ren Kaligarič" loading="lazy" />
+        <span class="big-num">03</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidat za občinski svet</span>
+        <h2>Ren Kaligarič</h2>
+        <p>Star 34 let, samostojni podjetnik. Ukvarja se z navtiko tako s športnega kot s poslovnega vidika, zato dobro pozna različne vidike tega področja in njegov pomen za lokalno okolje.</p>
+      </div>
+    </article>
+    <article class="cand alt" id="k04">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/kriss.jpg" alt="Kris Dassena" loading="lazy" />
+        <span class="big-num">04</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidatka za občinski svet</span>
+        <h2>Kris Dassena</h2>
+        <p>Stara 30 let, po izobrazbi magistrica novinarskih študij, trenutno dela kot koordinatorica projektov. Je pripadnica italijanske narodne skupnosti. Je prepričana, da sta večjezičnost in večkulturnost naših krajev bogastvo za vse nas. Verjame tudi v pomen civilne družbe in aktivnega vključevanja občank in občanov v življenje skupnosti.</p>
+      </div>
+    </article>
+    <article class="cand" id="k05">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/filip.png" alt="Filip Šeat" loading="lazy" />
+        <span class="big-num">05</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidat za občinski svet</span>
+        <h2>Filip Šeat</h2>
+        <p>Star 45 let, dela kot sistemski inženir. Svoje tehnično znanje povezuje z ljubeznijo do glasbe, morja in domačega okolja. Zavzema se za poštenost, sodelovanje in premišljene rešitve, ki odgovarjajo na potrebe lokalne skupnosti.</p>
+      </div>
+    </article>
+    <article class="cand alt" id="k06">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/breda.jpg" alt="Breda Medved" loading="lazy" />
+        <span class="big-num">06</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidatka za občinski svet</span>
+        <h2>Breda Medved</h2>
+        <p>Stara 62 let, 30 let izkušenj na področju računovodstva, predvsem pri delu z malimi podjetji in samostojnimi podjetniki. Gospodarstvo dobro pozna tudi iz vsakodnevne prakse. Aktivno je sodelovala že pri listi Izola prihodnosti, saj verjame, da lahko občina uspešno napreduje le z aktivnim sodelovanjem in zavzetostjo svojih občanov.</p>
+      </div>
+    </article>
+    <article class="cand" id="k07">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/miran.jpg" alt="Miran Molk" loading="lazy" />
+        <span class="big-num">07</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidat za občinski svet</span>
+        <h2>Miran Molk</h2>
+        <p>Star 62 let, grafični oblikovalec z izkušnjami v različnih podjetjih ter kot samostojni podjetnik. Od leta 1995 v Izoli in Kopru redno vodi vadbo joge za sproščanje. Aktivno je sodeloval tudi v Civilni iniciativi – Gibanju za Izolo pri referendumu proti sprejetemu občinskemu prostorskemu načrtu. S svojimi izkušnjami podpira ustvarjalnost in razvoj mladih v Izoli.</p>
+      </div>
+    </article>
+    <article class="cand alt" id="k08">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/tina.jpg" alt="Tina Lenardič" loading="lazy" />
+        <span class="big-num">08</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidatka za občinski svet</span>
+        <h2>Tina Lenardič</h2>
+        <p>Stara 47 let, po izobrazbi politologinja s področja mednarodnih odnosov. Ima izkušnje z odnosi z javnostmi, protokolom, podjetništvom, vodenjem evropskih projektov in poučevanjem tujih jezikov. Zavzema se za gospodarsko napredno Izolo, razvoj turizma ter ustvarjanje novih poslovnih priložnosti in delovnih mest. Pomembni so ji tudi kakovostni in varni prostori za zdravo preživljanje prostega časa otrok in mladostnikov ter urejeno, zeleno in prijetno bivalno okolje za vse generacije, tako v mestu kot na podeželju.</p>
+      </div>
+    </article>
+    <article class="cand" id="k09">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/rok.jpg" alt="Rok Medoš" loading="lazy" />
+        <span class="big-num">09</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidat za občinski svet</span>
+        <h2>Rok Medoš</h2>
+        <p>Star 39 let, dela kot električar v podjetju za vzdrževanje plovil. V prostem času se posveča svoji veliki ljubezni — glasbi.</p>
+      </div>
+    </article>
+    <article class="cand alt" id="k10">
+      <div class="photo">
+        <img src="../assets/SZI-profilne/helena.jpg" alt="Helena Ventin" loading="lazy" />
+        <span class="big-num">10</span>
+      </div>
+      <div class="txt">
+        <span class="role">Kandidatka za občinski svet</span>
+        <h2>Helena Ventin</h2>
+        <p>Stara 50 let, ima več kot 25 let izkušenj na področju računovodstva, financ in kadrov. Kot nekdanja športnica verjame v vztrajnost, ekipno delo in povezovanje — vrednote, ki jih želi uveljavljati tudi pri svojem delovanju v lokalni skupnosti.</p>
+      </div>
+    </article>
+
+    <div class="more">
+      <h2>Našo kandidatno listo dopolnjujejo še:</h2>
+      <p>Marino Kleva · Alessia Mima Perič · Jovan Frank · Andrej Zidarič · Nataša Ilić · Kristina Mandalenič · Katja Zornada · Diego Čolič</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">PROTOTIP B — uredniški seznam • <a href="kandidati-a.html">Prototip A</a> • <a href="kandidati-c.html">Prototip C</a> • <a href="../index.html">← Domov</a></div>
+  </footer>
+</body>
+</html>
